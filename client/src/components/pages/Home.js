@@ -40,7 +40,7 @@ class Home extends Component {
     let {drinks, drink} = this.state
     return drinks
       ? <Container text>
-        <Header as='h2' icon textAlign='center' color='red'>
+        <Header as='h2' icon textAlign='center' color='blue'>
           <Icon name='unordered list' circular />
           <Header.Content>
             List of Ingredients
@@ -48,7 +48,7 @@ class Home extends Component {
         </Header>
         <Divider hidden section />
         {drinks && drinks.length
-          ? <Button.Group color='teal' fluid widths={drinks.length}>
+          ? <Button.Group color='blue' fluid widths={drinks.length}>
             {Object.keys(drinks).map((key) => {
               return <Button active={drink && drink.id === drinks[key].id} fluid key={key} onClick={() => this.getDrink(drinks[key].id)}>
                 {drinks[key].title}

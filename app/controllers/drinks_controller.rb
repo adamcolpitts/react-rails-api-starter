@@ -15,7 +15,7 @@ class DrinksController < ApiController
 
   # GET /drinks/:id
   def show
-    json_response(@drink)
+    render json: @drink.to_json(:include => { :ingredients => { :only => [:id, :description] }})
   end
 
   # PUT /drinks/:id
