@@ -6,6 +6,7 @@ Rails 5 RESTful API w/RSpec for test suite. This project leverages ActiveAdmin f
 
 * Ruby version: `2.5.1`
 * Rails version: `5.2.0`
+* Node `8.11.2`+
 * Heroku CLI: [See instructions here](https://devcenter.heroku.com/articles/heroku-cli)
 
 ## Getting Started
