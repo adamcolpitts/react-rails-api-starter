@@ -41,9 +41,9 @@ class Home extends Component {
     return drinks
       ? <Container text>
         <Header as='h2' icon textAlign='center' color='blue'>
-          <Icon name='unordered list' circular />
+          <i class="material-icons md-48">local_bar</i>
           <Header.Content>
-            List of Ingredients
+            Mixology App
           </Header.Content>
         </Header>
         <Divider hidden section />
